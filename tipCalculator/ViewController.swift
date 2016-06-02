@@ -146,8 +146,8 @@ class ViewController: UIViewController {
         }
         let ToAmount = billamount * (1 + percentage)
         
-        tipAmountLabel.text = "+   \(key)     \((billamount * percentage / splitNumber) * value! )"
-        totalAmountLabel.text = "=   \(key)     \((ToAmount / splitNumber) * value! )"
+        tipAmountLabel.text = "\(key)  \((billamount * percentage / splitNumber) * value! )"
+        totalAmountLabel.text = "\(key)  \((ToAmount / splitNumber) * value! )"
         
         tipAmountLabel.adjustsFontSizeToFitWidth = true
         tipAmountLabel.textAlignment = NSTextAlignment.Center
@@ -158,6 +158,7 @@ class ViewController: UIViewController {
         //MARK: animation when text fill
         
         if checkTextField() {
+            
             let alphaTint = defaults.integerForKey("alphaT")
             let alphaSint = defaults.integerForKey("alphaS")
             let alphaCint = defaults.integerForKey("alphaC")

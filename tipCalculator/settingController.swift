@@ -25,7 +25,10 @@ class settingController: UITableViewController {
     
     
     @IBAction func tipSwitch(sender: AnyObject) {
+        tipOutlet.on = (sender as! UISwitch).on
+
         if tipOutlet.on {
+            
             
             print("on")
             defaults.setInteger(1, forKey: "alphaT")
@@ -92,12 +95,26 @@ class settingController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+             
+        
         tipOutlet.on = defaults.boolForKey("tipOutletState")
         splitOutlet.on = defaults.boolForKey("splitOutletState")
         currencyOutlet.on = defaults.boolForKey("currencyOutletState")
         
         
          percentageDefault.selectedSegmentIndex = defaults.integerForKey("defaultTip")
+        
+        var userReturnedAuto = NSUserDefaults.standardUserDefaults().boolForKey("userReturnedAuto")
+        if userReturnedAuto == false {
+            tipOutlet.on = true
+            
+            userReturnedAuto = true
+            NSUserDefaults.standardUserDefaults().setBool(userReturnedAuto, forKey: "userReturnedAuto")
+            NSUserDefaults.standardUserDefaults().setBool(userReturnedAuto, forKey: "tipOutletState")
+        }
       
         
         
