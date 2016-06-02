@@ -4,7 +4,7 @@
 
 Tip Calculator app for CoderSchool
 
-Time spent: 8 hours total
+Time spent: 10 hours total
 
 Completed user stories:
 
