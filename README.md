@@ -17,7 +17,10 @@ Completed user stories:
 * [x] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 
-Walkthough of the project
+# Here's a walkthrough of implemented user stories:
 
-![](http://imgur.com/RUwRjNo )
+![Video Walkthrough](tipCalc/tipCalculator.gif)
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
 
