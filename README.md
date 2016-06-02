@@ -19,5 +19,5 @@ Completed user stories:
 
 Walkthough of the project
 
-![](tipCalc/tipCalculator.gif )
+![](http://imgur.com/RUwRjNo )
 
