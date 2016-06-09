@@ -81,6 +81,11 @@ class ViewController: UIViewController {
         sliderLabel.text = "split: 1"
         billAmountTextField.becomeFirstResponder()
         
+        defaults.setInteger(1, forKey: "alphaT")
+        defaults.setInteger(1, forKey: "alphaS")
+        defaults.setInteger(1, forKey: "alphaC")
+        defaults.synchronize()
+        
         
     }
     
