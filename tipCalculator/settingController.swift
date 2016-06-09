@@ -110,10 +110,17 @@ class settingController: UITableViewController {
         var userReturnedAuto = NSUserDefaults.standardUserDefaults().boolForKey("userReturnedAuto")
         if userReturnedAuto == false {
             tipOutlet.on = true
+            currencyOutlet.on = true
+            splitOutlet.on = true
+            
             
             userReturnedAuto = true
             NSUserDefaults.standardUserDefaults().setBool(userReturnedAuto, forKey: "userReturnedAuto")
             NSUserDefaults.standardUserDefaults().setBool(userReturnedAuto, forKey: "tipOutletState")
+            NSUserDefaults.standardUserDefaults().setBool(userReturnedAuto, forKey: "currecyOutletState")
+            NSUserDefaults.standardUserDefaults().setBool(userReturnedAuto, forKey: "splitOutletState")
+            
+
         }
       
         
